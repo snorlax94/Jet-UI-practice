@@ -1,0 +1,109 @@
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:auto="http://schemas.android.com/apk/res-auto"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--tools:context=".MainActivity">-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/title"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="15dp"-->
+        <!--android:textSize="36dp"-->
+        <!--tools:text="TITLE" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/subtitle"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:textSize="28dp"-->
+        <!--tools:text="Subtitle" />-->
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/action_bar"-->
+        <!--style="@style/recon_button_action_bar">-->
+
+        <!--<com.reconinstruments.ui.view.ButtonActionView-->
+            <!--style="@style/recon_button_action"-->
+            <!--auto:actionText="OK"-->
+            <!--auto:buttonType="select" />-->
+
+        <!--<com.reconinstruments.ui.view.ButtonActionView-->
+            <!--style="@style/recon_button_action"-->
+            <!--auto:actionText="BACK"-->
+            <!--auto:buttonType="back" />-->
+    <!--</LinearLayout>-->
+<!--</RelativeLayout>-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:auto="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="36dp"
+        android:fontFamily="bold"
+        tools:text="TITLE"
+        android:layout_marginBottom="11dp"
+        android:layout_above="@+id/below"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:id="@+id/below"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:layout_marginBottom="84dp">
+
+
+        <TextView
+            android:id="@+id/subtitle_front"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22dp"
+            android:fontFamily="bold"
+            android:text="Press" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"
+            android:src="@drawable/select_jet"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+
+        <TextView
+            android:id="@+id/subtitle_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22dp"
+            android:fontFamily="bold"
+            android:text="to start tracking" />
+
+
+
+    </LinearLayout>
+
+
+
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/action_bar"-->
+        <!--style="@style/recon_button_action_bar">-->
+        <!--<com.reconinstruments.ui.view.ButtonActionView-->
+            <!--style="@style/recon_button_action"-->
+            <!--auto:buttonType="select" />-->
+    <!--</LinearLayout>-->
+</RelativeLayout>
